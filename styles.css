@@ -26,22 +26,51 @@ img {
     padding: .6rem;
     align-items: center;
     padding-left: 1rem;
+    gap: 1rem;
+    box-shadow: 0rem .1rem .1rem lightgrey;
+    z-index: 1;
 }
 
 .top-header {
     grid-row: 1/2;
-    display: flex;
+    /*display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between;*/
+    display: grid;
+    grid-template-columns: 1fr 5fr 2fr repeat(3, 1fr);
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
+
+#icon-one {
+    grid-column: 1/2;
+}
+
+#icon-two {
+    grid-column: 4/5;
+}
+
+#icon-three {
+    grid-column: 5/6;
+}
+
+#top-header-name {
+    grid-column: 6/-1;
+    display: flex;
+    flex-flow: wrap;
+}
+
+.top-header div {
+    align-self: center;
 }
 
 #search {
-    background: grey;
-    width: 31rem;
+    grid-column: 2/3;
+    background: rgb(177, 175, 175);
+    width: minmax(15rem, 30rem);
     border-radius: 1rem;
     height: 1.5rem;
-    align-self: center;
-    margin-left: -2rem;
+    
 }   
 
 .bottom-header {
@@ -66,8 +95,8 @@ img {
 }
 
 .optionButtons {
-    background: rgb(57, 124, 146);
-    width: 4.5rem;
+    background: rgb(101, 188, 218);
+    width: 5.5rem;
     height: 2rem;
     border-radius: 1rem;
     display: flex;
@@ -75,8 +104,13 @@ img {
     justify-content: center;
 }
 
+#hello {
+    font-size: small;
+}
+
 #introduction {
     font-size: larger;
+    font-weight: bold;
 }
 
 .left-column {
@@ -149,19 +183,19 @@ img {
 .grid-projects-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: repeat(autofit, minmax(200px, 1fr));
     height: 100%;
     gap: 1rem;
 }
 
 .project {
     background: khaki;
-    border: 1px solid black;
     display: grid;
     grid-template-rows: repeat(2, .1fr 1fr);
     border-radius: .5rem;
     gap: .4rem;
     padding: 1rem;
+    box-shadow: .1rem .1rem .1rem lightgrey;
 }
 
 .icon-container {
