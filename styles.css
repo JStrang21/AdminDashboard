@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;;
 }
 
 img {
@@ -22,6 +25,7 @@ img {
     grid-template-rows: 1fr 1fr;
     padding: .6rem;
     align-items: center;
+    padding-left: 1rem;
 }
 
 .top-header {
@@ -29,8 +33,6 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 1.8rem;
-
 }
 
 #search {
@@ -91,6 +93,10 @@ img {
 .sectionOne {
     grid-row: 1/2;
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
 }
 
 .sectionTwo {
@@ -100,11 +106,27 @@ img {
     gap: 1rem;
 }
 
+.sectionTwo * {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .sectionThree {
     grid-row: 3/4;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+.sectionThree * {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sectionTwo, .sectionThree {
+    padding-left: .3rem;
 }
 
 .right-column {
@@ -120,7 +142,7 @@ img {
     background: lightseagreen;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 1rem;
     padding: 2rem;
 }
 
@@ -135,6 +157,19 @@ img {
 .project {
     background: khaki;
     border: 1px solid black;
+    display: grid;
+    grid-template-rows: repeat(2, .1fr 1fr);
+    border-radius: .5rem;
+    gap: .4rem;
+    padding: 1rem;
+}
+
+.icon-container {
+    grid-row: 4/5;
+    display: flex;
+    justify-content: flex-end;
+    gap: .5rem;
+    padding-top: 1.5rem;
 }
 
 
