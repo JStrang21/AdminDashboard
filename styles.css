@@ -29,6 +29,7 @@ img {
     gap: 1rem;
     box-shadow: 0rem .1rem .1rem lightgrey;
     z-index: 1;
+    padding-right: 1rem;
 }
 
 .top-header {
@@ -165,10 +166,11 @@ img {
 
 .right-column {
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 4fr 1.5fr;
     grid-template-rows: 50% 50%;
     grid-area: 2/2/-1/-1;
     background: lightgray;
+    padding-right: 1rem;
 }
 
 .project-container {
@@ -195,7 +197,6 @@ img {
     border-radius: .5rem;
     gap: .4rem;
     padding: 1rem;
-    box-shadow: .1rem .1rem .1rem lightgrey;
 }
 
 .icon-container {
@@ -210,9 +211,34 @@ img {
 .announcements {
     grid-area: 1/2/2/-1;
     background: lightsalmon;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.announcement-container {
+    display: grid;
+    grid-template-rows: repeat(3, 3fr);
+    background: lightskyblue;
+    border-radius: .5rem;
+    padding: 2rem;
+    font-size: small;
+    gap: 1rem;
+    grid-gap: 1rem;
+    box-shadow: .1rem .1rem .1rem lightgrey;
+}
+
+.announce-item {
+    border-top: 1px solid lightyellow;
+}
+
+#announce-one {
+    border-top: 1px solid lightskyblue;
 }
 
 .trending {
     grid-area: 2/2/-1/-1;
     background: lightyellow;
+    
 }
