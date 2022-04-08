@@ -217,7 +217,7 @@ img {
     gap: 1rem;
 }
 
-.announcement-container {
+.announcement-container {                               /*Need to fix issue with border between annoucement items*/
     display: grid;
     grid-template-rows: repeat(3, 3fr);
     background: lightskyblue;
@@ -239,6 +239,29 @@ img {
 
 .trending {
     grid-area: 2/2/-1/-1;
-    background: lightyellow;
+    background: rgb(163, 163, 133);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     
+}
+
+.trending-container {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    border-radius: .5rem;
+    padding: 2rem;
+    font-size: small;
+    border-radius: 1rem;
+    background: crimson;
+    row-gap: 1rem;
+}
+
+.trend-item {
+    display: flex;
+    gap: 1rem;
+}
+
+.trend-item-content {
+    gap: .1rem;
 }
