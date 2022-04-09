@@ -19,8 +19,17 @@
 img {
     width: 30px;
     height: 30px;
-    background-color: grey;
 }
+.sectionTwo img {
+    width: 20px;
+    height: 20px;
+}
+
+.sectionThree img {
+    width: 20px;
+    height: 20px;
+}
+
 
 .layout {
     display: grid;
@@ -246,11 +255,19 @@ img {
 }
 
 .announce-item {
-    border-top: 1px solid lightyellow;
+    border-top: 1px solid rgb(136, 136, 116);
+    border-bottom: 1px solid rgb(136, 136, 116);
+    /*padding-top: 1rem;
+    margin-top: -.5rem;*/
+    align-self: flex-start;
 }
 
 #announce-one {
-    border-top: 1px solid lightskyblue;
+    border-top: 1px solid #ecfeff;
+}
+
+#announce-three {
+    border-bottom: 1px solid #ecfeff;
 }
 
 .trending {
@@ -282,3 +299,5 @@ img {
 .trend-item-content {
     gap: .1rem;
 }
+
+
