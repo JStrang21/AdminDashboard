@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
-
+/*Color Palette
+#ecfeff
+#cffafe
+#a5f3fc
+#67e8f9
+#22d3ee
+#06b6d4
+#0891b2
+#0e7490
+#155e75
+#164e63*/
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +19,7 @@
 img {
     width: 30px;
     height: 30px;
+    background-color: grey;
 }
 
 .layout {
@@ -19,7 +30,7 @@ img {
 }
 
 .header {
-    background: lightgreen;
+    background: #ecfeff;
     grid-area: 1/2/2/-1;
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -96,7 +107,7 @@ img {
 }
 
 .optionButtons {
-    background: rgb(101, 188, 218);
+    background: #0ea5e9;
     width: 5.5rem;
     height: 2rem;
     border-radius: 1rem;
@@ -115,7 +126,7 @@ img {
 }
 
 .left-column {
-    background: rgb(107, 179, 107);
+    background: #0ea5e9;
     color: ivory;
     grid-area: 1/1/-1/2;
     display: grid;
@@ -169,13 +180,13 @@ img {
     grid-template-columns: 4fr 1.5fr;
     grid-template-rows: 50% 50%;
     grid-area: 2/2/-1/-1;
-    background: lightgray;
     padding-right: 1rem;
+    background: #d6d3d1;
 }
 
 .project-container {
     grid-area: 1/1/-1/2;
-    background: lightseagreen;
+    background: #d6d3d1;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -191,7 +202,7 @@ img {
 }
 
 .project {
-    background: khaki;
+    background: #ecfeff;
     display: grid;
     grid-template-rows: repeat(2, .1fr 1fr);
     border-radius: .5rem;
@@ -210,7 +221,7 @@ img {
 
 .announcements {
     grid-area: 1/2/2/-1;
-    background: lightsalmon;
+    background: #d6d3d1;
     padding-top: 2rem;
     display: flex;
     flex-direction: column;
@@ -220,7 +231,7 @@ img {
 .announcement-container {                               /*Need to fix issue with border between annoucement items*/
     display: grid;
     grid-template-rows: repeat(3, 3fr);
-    background: lightskyblue;
+    background: #ecfeff;
     border-radius: .5rem;
     padding: 2rem;
     font-size: small;
@@ -239,7 +250,7 @@ img {
 
 .trending {
     grid-area: 2/2/-1/-1;
-    background: rgb(163, 163, 133);
+    background: #d6d3d1;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -253,7 +264,7 @@ img {
     padding: 2rem;
     font-size: small;
     border-radius: 1rem;
-    background: crimson;
+    background: #ecfeff;
     row-gap: 1rem;
 }
 
